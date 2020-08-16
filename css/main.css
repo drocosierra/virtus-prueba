@@ -1,8 +1,41 @@
 /* Estilos generales */
 body{
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 .container{
     max-width: 1230px;
     margin: 0 auto;
+}
+
+/* Estilos Header */
+header .navbar{
+    padding: 1rem 4rem;
+}
+header .navbar .virtus-logo{
+    background: url(../img/virtus-logo.png);
+    background-size: cover;
+    width: 170px;
+    height: 67px;
+}
+header .navbar .navbar-nav .nav-item{
+    margin-right: 15px;
+}
+header .navbar .navbar-nav .nav-item .nav-link{
+    color: #09070D;
+}
+header .navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #3B92FE;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    header .navbar{
+        padding: 0.5rem 1rem;
+    }
+    header .navbar .virtus-logo{
+        background-size: no-repeat;
+        width: 67px;
+    }
 }
