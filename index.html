@@ -17,6 +17,8 @@
 </head>
 
 <body>
+
+	<!-- Header-->
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="virtus-logo" href="#"></a>
@@ -28,7 +30,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Somos</a>
+						<a class="nav-link" href="#">Somos V · Digital</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Principios</a>
@@ -39,11 +41,64 @@
 				</ul>
 			</div>
 		</nav>
-	</header>
-	
+	</header><!-- Header-->
+
+	<!-- Sección Carrusel -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<h3>
+						El mundo está cambiando,
+					</h3>
+					<h1>
+						impulsado por disrupciones en nuevas tecnologías.
+					</h1>
+					<p>
+						Las preferencias del consumidor estarán en el epicentro de la disrupción. La personalización y
+						movilidad son las áreas donde se espera experimentar la mayoría de las disrupciones en los
+						siguientes años.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="img/carousel-slide1.jpg" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Este cambio es <span class="color-primario--purpura">cada vez más rápido</span> y afecta a todas las industrias</h5>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/carousel-slide2.png" alt="...">
+					<div class="carousel-caption carousel-caption--right d-none d-md-block">
+						<h5><span class="color-primario--purpura">Transformación</span> digital es la oportunidad para transformar la relación con clientes y empleados mediante la creación de <span class="color-primario--purpura">experiencias únicas...</span></h5>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/carousel-slide3.jpg" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>...y al mismo tiempo, la oportunidad de las empresas para <span class="color-primario--purpura">reinventar sus modelos de negocios</span> y explorar nuevas áreas de desarrollo (pivotear)</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- Sección Carrusel -->
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$('.carousel').carousel({
+			interval: 4000,
+			pause: false
+		})
+	</script>
 </body>
 
 </html>
