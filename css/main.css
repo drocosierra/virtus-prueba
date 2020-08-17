@@ -88,22 +88,37 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
 }
 
 /* Estilos Servicios */
-.servicios .card-deck{
+.card-deck{
     padding-top: 25px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     grid-gap: .5rem;
 }
-.servicios .card-deck .card .card-img-top{
+.card-deck .card .card-img-top{
     width: 50%;
     align-self: center;
 }
-.servicios .card-deck .card .card-body .card-title{
+.card-deck .card .card-body .card-title{
     font-size: 1.2em;
     font-weight: 600;
 }
-.servicios .card-deck .card .card-body .card-text{
+.card-deck .card .card-body .card-text{
     font-size: 0.9em;
+}
+
+/* Estilos Principios */
+.principios .principios__titulo{
+    background: url(../img/img-principios.jpg) 0 0 no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.5em;
+    font-weight: 600;
+    padding: 2em 5em;
+    margin-bottom: 20px;
+}
+.principios .card-deck .card .card-img-top{
+    width: 30%;
 }
 
 /* Responsive */
@@ -111,10 +126,13 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
     .carousel .carousel-inner .carousel-item .carousel-caption h5{
         font-size: 1.8em;
     }
-    .servicios .card-deck{
+    .card-deck{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
         gap: .5em;
+    }
+    .principios .principios__titulo{
+        padding: 1.5em 3em;
     }
 }
 @media (max-width: 991.98px) {
@@ -132,6 +150,12 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
     }
     .carousel .carousel-inner .carousel-item .carousel-caption h5{
         font-size: 1.5em;
+    }
+    .principios .principios__titulo{
+        font-size: 2em;
+    }
+    .card-deck .card .card-img-top{
+        width: 30%;
     }
 }
 @media (max-width: 767.98px) {
