@@ -41,34 +41,29 @@ p{
 .color-gris--3{
     color: #98979A;
 }
-#button {
+#button{
     display: inline-block;
     position: fixed;
-    bottom: 30px;
+    bottom: 10px;
     right: 30px;
-    transition: background-color .3s, 
-        opacity .5s, visibility .5s;
+    transition: opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-  }
-#button::after {
+}
+#button::after{
     content: "\f106";
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
     font-size: 3em;
     line-height: 50px;
-    color: #000;
+    color: #333;
 }
-#button:hover {
+#button:hover{
     cursor: pointer;
-    background-color: #333;
 }
-#button:active {
-    background-color: #555;
-}
-#button.show {
+#button.show{
     opacity: 1;
     visibility: visible;
 }
@@ -157,6 +152,9 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
 }
 
 /* Estilos Equipo */
+.section-equipo{
+    padding-bottom: 0;
+}
 .equipo .equipo__titulo{
     background: url(../img/img-equipo.jpg) 0 0 no-repeat;
     background-size: cover;
@@ -230,6 +228,10 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
     }
     h3{
         font-size: 1.2em;
+    }
+    #button{
+        bottom: 5px;
+        right: 10px;
     }
     header .navbar .virtus-logo{
         background-size: no-repeat;
