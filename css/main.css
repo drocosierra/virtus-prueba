@@ -89,6 +89,17 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
 
 /* Responsive */
 @media (max-width: 1199.98px) {
+    .carousel .carousel-inner .carousel-item .carousel-caption h5{
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 991.98px) {
+    header .navbar{
+        padding: 0.5rem 1rem;
+    }
+    section{
+        padding: 1.5em 0;
+    }
     .carousel .carousel-inner .carousel-item .carousel-caption{
         width: 50%;
         height: 100%;
@@ -105,9 +116,6 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
     }
     h3{
         font-size: 1.2em;
-    }
-    header .navbar{
-        padding: 0.5rem 1rem;
     }
     header .navbar .virtus-logo{
         background-size: no-repeat;
