@@ -87,10 +87,34 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
     align-self: center;
 }
 
+/* Estilos Servicios */
+.servicios .card-deck{
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: .5rem;
+}
+.servicios .card-deck .card .card-img-top{
+    width: 50%;
+    align-self: center;
+}
+.servicios .card-deck .card .card-body .card-title{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.servicios .card-deck .card .card-body .card-text{
+    font-size: 0.9em;
+}
+
 /* Responsive */
 @media (max-width: 1199.98px) {
     .carousel .carousel-inner .carousel-item .carousel-caption h5{
         font-size: 1.8em;
+    }
+    .servicios .card-deck{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+        gap: .5em;
     }
 }
 @media (max-width: 991.98px) {
