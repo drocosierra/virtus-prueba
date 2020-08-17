@@ -10,6 +10,9 @@ body{
 section{
     padding: 2.5em 0;
 }
+body section:last-child{
+    padding-bottom: 0;
+}
 h1{
     font-size: 2.6em;
     font-weight: 600;
@@ -38,6 +41,37 @@ p{
 .color-gris--3{
     color: #98979A;
 }
+#button {
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+#button::after {
+    content: "\f106";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3em;
+    line-height: 50px;
+    color: #000;
+}
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#button:active {
+    background-color: #555;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* Estilos Header */
 header .navbar{
@@ -54,9 +88,10 @@ header .navbar .navbar-nav .nav-item{
 }
 header .navbar .navbar-nav .nav-item .nav-link{
     color: #09070D;
+    transition: 0.3s;
 }
 header .navbar .navbar-nav .nav-item .nav-link:hover{
-    color: #3B92FE;
+    color: #6D2CD3;
 }
 
 /* Estilos Inicio */
@@ -121,8 +156,39 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
     width: 30%;
 }
 
+/* Estilos Equipo */
+.equipo .equipo__titulo{
+    background: url(../img/img-equipo.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.equipo .equipo__titulo h1{
+    background: rgba(0, 0, 05, 0.3);
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.5em;
+    font-weight: 600;
+    padding: 4em 3em;
+    margin-bottom: 0;
+}
+.equipo .equipo__perfiles{
+    padding: 2em 5em 0;
+}
+.equipo .equipo__perfiles .d-flex{
+    margin-bottom: 25px;
+}
+.equipo .equipo__perfiles img{
+    width: 10%;
+}
+.equipo .equipo__perfiles span{
+    font-size: 1.3em;
+    margin-left: 15px;
+}
+
 /* Responsive */
 @media (max-width: 1199.98px) {
+    header .navbar{
+        padding: 0.5rem 1rem;
+    }
     .carousel .carousel-inner .carousel-item .carousel-caption h5{
         font-size: 1.8em;
     }
@@ -134,11 +200,11 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
     .principios .principios__titulo{
         padding: 1.5em 3em;
     }
+    .equipo .equipo__titulo h1{
+        padding: 2em 1em;
+    }
 }
 @media (max-width: 991.98px) {
-    header .navbar{
-        padding: 0.5rem 1rem;
-    }
     section{
         padding: 1.5em 0;
     }
@@ -177,5 +243,14 @@ header .navbar .navbar-nav .nav-item .nav-link:hover{
     }
     .carousel .carousel-inner .carousel-item .carousel-caption h5{
         font-size: 1.3em;
+    }
+    .principios .card-deck .card .card-img-top{
+        width: 20%;
+    }
+    .equipo .equipo__titulo h1{
+        font-size: 2em;
+    }
+    .equipo .equipo__perfiles{
+        padding: 2em 2em 0;
     }
 }
